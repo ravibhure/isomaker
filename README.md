@@ -11,7 +11,7 @@ Consider using tools like ansible, chef or puppet to perform any additional soft
 The script supports the following Ubuntu editions out of the box:
 
 * Ubuntu 12.04.5 Server LTS amd64 - Precise Pangolin
-* Ubuntu 14.04.3 Server LTS amd64 - Trusty Tahr
+* Ubuntu 14.04.5 Server LTS amd64 - Trusty Tahr
 
 This script has been tested on and with these two versions.
 
@@ -29,7 +29,7 @@ $ sudo ./isomaker
 
 ```
  +---------------------------------------------------+
- |            UNATTENDED UBUNTU ISO MAKER            |
+ |            UNATTENDED ISO MAKER                   |
  +---------------------------------------------------+
  >>> which ubuntu edition would you like to remaster:
 
