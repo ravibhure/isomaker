@@ -1,0 +1,8 @@
+IP1=$new_ip_address
+[[ -z $IP1 ]] && IP1=169.254.1.2
+DOMAIN=$new_domain_name
+[[ -z $DOMAIN ]] && DOMAIN=localdomain
+IP2=ec3-$(echo $IP1|sed 's/\./-/g')
+hostname $IP2
+echo $IP2 > /etc/hostname
+sed -i "2s/\(.*\)/$IP1\t$IP2.$DOMAIN\t$IP2/" /etc/hosts
